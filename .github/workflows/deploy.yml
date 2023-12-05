@@ -22,19 +22,19 @@ jobs:
       -name: Terraform Init
        id: init
        run : terraform init
-       working-directory: ./Terraform-VPC
+       working-directory: ./VPC-GIT-ACTION
       -name: Terraform validate
        id: validate
        run : terraform validate
-       working-directory: ./Terraform-VPC
+       working-directory: ./VPC-GIT-ACTION
       -name: Terraform Plan
        id: plan
        run : terraform plan
-       working-directory: ./Terraform-VPC 
+       working-directory: ./VPC-GIT-ACTION
       -name: Terraform apply
        id: apply
        run : terraform apply -auto-approve
-       working-directory: ./Terraform-VPC 
+       working-directory: ./VPC-GIT-ACTION
 
     
        
